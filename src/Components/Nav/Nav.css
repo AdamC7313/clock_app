@@ -1,10 +1,10 @@
 .nav-container {
-    width: 122px;
+    width: 125px;
     border: none;
     border-right: 4px solid #FB2576;
 }
 .nav {
-    width: 122px;
+    width: 125px;
     background: none;
     border: none;
     color: #FB2576;
@@ -16,8 +16,7 @@
 }
 
 .nav:hover {
-    background-color: white;
-    opacity: 10%;
+    background-image: linear-gradient(rgb(255,255,255,0.3), rgb(255,255,255,0.1));
     cursor: pointer;
     color: #FB2576;
 
@@ -40,4 +39,21 @@
     bottom: -1px;
     display: flex;
 
+}
+
+.nav a {
+    text-decoration: none;
+    color: #FB2576;
+    width: 125px;
+    height: 50px;
+}
+
+.active {
+    border-top: 2px solid #FB2576;
+    
+}
+
+.nav p, .navbar a {
+    margin: 0px 0px;
+    text-decoration: none;
 }

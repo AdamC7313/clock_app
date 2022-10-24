@@ -4,19 +4,27 @@ import { NavLink } from 'react-router-dom';
 export default function Nav() {
     const style = { color: 'red', fontSize: '2em'}
     return (
-        <div>
+        <div className='navbar'>
+        
             <NavLink to='/stopwatch'>
-                Stopwatch
+            <div className="nav firstnav"><p>Stopwatch</p></div>
             </NavLink>
+        
+            
             <NavLink to='/timer'>
-                Timer
+            <div className="nav middlenav">Timer</div>
             </NavLink>
+           
+            
             <NavLink to='/clock'>
-                Clock
+            <div className="nav middlenav">Clock</div>
             </NavLink>
+            
+            
             <NavLink to='/alarm'>
-                Alarm
+            <div className="nav lastnav">Alarm</div>
              </NavLink>
+             
         </div>
     )
 }
