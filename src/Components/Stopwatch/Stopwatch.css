@@ -1,0 +1,86 @@
+.stopwatch-clock {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    font-size: 3rem;
+}
+
+button {
+    position: absolute;
+    background: none;
+    color: #FB2576;
+    border: 2px solid #FB2576;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background: rgb(251, 37, 119, 0.5);
+    cursor: pointer;
+}
+
+button:active {
+    background: rgb(251, 37, 119, 0.7);
+    cursor: pointer;
+}
+
+.start-stopwatch {
+    bottom: 100px;
+    left: 50px;
+}
+
+.stop-stopwatch {
+    bottom: 100px;
+    right: 210px;
+}
+
+.lap {
+    top: 285px;
+    right: 50px;
+}
+
+.reset-stopwatch {
+    bottom: 100px;
+    right: 50px;
+}
+
+.ind-lap {
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.lap-num {
+    display: inline-block;
+    margin-right: 165px;
+
+}
+
+.laps {
+    margin-top: 10px;
+    height: 240px;
+    overflow-x: hidden;
+    width: 490px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FB2576;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

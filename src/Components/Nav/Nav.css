@@ -16,7 +16,7 @@
 }
 
 .nav:hover {
-    background-image: linear-gradient(rgb(255,255,255,0.3), rgb(255,255,255,0.1));
+    text-decoration: underline;
     cursor: pointer;
     color: #FB2576;
 
@@ -49,9 +49,6 @@
 
 .active {
     text-decoration: underline !important;
-}
-
-.active p {
     color: #FB2576;
 }
 

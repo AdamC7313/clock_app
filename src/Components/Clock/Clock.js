@@ -1,4 +1,4 @@
-import './Stopwatch.css';
+import './Clock.css';
 
 export default function Clock() {
     return (

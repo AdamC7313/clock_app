@@ -1,4 +1,4 @@
-import './Stopwatch.css';
+import './Alarm.css';
 
 export default function Alarm() {
     return (
