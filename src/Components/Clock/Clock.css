@@ -1,0 +1,39 @@
+#choose-timezone {
+    background: transparent;
+    color: rgb(251, 37, 119);
+    border: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.current-time {
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.time-and-timezone {
+    position: absolute;
+    top: 160px;
+    right: 120px;
+}
+
+option {
+    background-color: black;
+    font-size: 2rem;
+    border: none;
+}
+
+.timezone-words {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.option:active {
+    background-color: rgb(255, 255, 255, 0.5)
+}
+
+.AMPM {
+    margin-left: 10px;
+    font-size: 2rem;
+}
