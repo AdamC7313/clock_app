@@ -1,0 +1,81 @@
+.start-timer {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.reset-timer {
+    bottom: 100px;
+    right: 50px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.countdown {
+    position:absolute;
+    top: 150px;
+    left: 175px;
+    font-size: 4rem;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.stop-timer {
+    bottom: 100px;
+    right: 210px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.minute-up {
+    position: absolute;
+    top: 120px;
+    left: 195px;
+    font-size: 2rem;
+}
+
+.second-up {
+    position: absolute;
+    top: 120px;
+    right: 192px;
+    font-size: 2rem;
+}
+
+.second-down {
+    position: absolute;
+    top: 240px;
+    right: 192px;
+    font-size: 2rem;
+}
+
+.minute-down {
+    position: absolute;
+    top: 240px;
+    left: 192px;
+    font-size: 2rem;
+}
+
+
+.minute-up:hover, .second-up:hover, .minute-down:hover, .second-down:hover {
+    cursor: pointer;
+    color: rgb(251, 37, 119, 0.5);
+}
+
+.minute-up:active, .second-up:active, .minute-down:active, .second-down:active {
+    cursor: pointer;
+    color: rgb(251, 37, 119, 0.7);
+}

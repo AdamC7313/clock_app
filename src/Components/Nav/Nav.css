@@ -45,6 +45,7 @@
     color: #FB2576;
     width: 125px;
     height: 46px;
+    
 }
 
 .active {
@@ -56,4 +57,12 @@
     margin: 0px 0px;
     text-decoration: none;
     margin-bottom: 0px;
+}
+
+.nav {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
