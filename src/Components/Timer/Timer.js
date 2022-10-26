@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { GoTriangleUp, GoTriangleDown } from 'react-icons/go';
 
 export default function Timer() {
-    let [countdown, setCountdown] = useState(59000)
+    let [countdown, setCountdown] = useState(0)
     let [timerOn, setTimerOn] = useState(false)
     let [arrows, setArrows] = useState([
         <GoTriangleUp key='1' className='minute-up' onClick={() => setCountdown(prevCount => prevCount + 60000)} />,
