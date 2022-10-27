@@ -20,8 +20,6 @@ export default function Clock() {
         setHour(hour);
         setMinute(date.getMinutes());
         setSecond(date.getSeconds());
-        setDay(date.getDay());
-        setPm(date.getHours() >= 12);
     }
 
     update();
