@@ -1,0 +1,97 @@
+.time-select, .increment, .minutes-down-alarm, 
+.minutes-up-alarm, .seconds-down-alarm, .seconds-down-alarm,
+.add-alarm, .day, .day:active, .days-container, .selected-day {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.time-select {
+    position: absolute;
+    font-size: 2rem;
+    top: 50px;
+    left: 50px;
+}
+
+.increment {
+    position:absolute;
+    font-size: 2rem;
+}
+
+.minutes-up-alarm {
+    top: 28px;
+    left: 51px;
+}
+
+.minutes-down-alarm {
+    top: 87px;
+    left: 51px;
+}
+
+.seconds-up-alarm {
+    top: 28px;
+    left: 92.5px;
+}
+
+.seconds-down-alarm {
+    top: 87px;
+    left: 92.5px;
+}
+
+.add-alarm {
+    font-size: 0.75rem;
+    padding: 3px 3px;
+    position: absolute;
+    top: 61px;
+    left: 400px;
+}
+
+.days-container {
+    display: flex;
+    position: absolute;
+    top: 36px;
+    left: 200px;
+    justify-content: space-between;
+    width: 175px;
+}
+
+.day {
+    font-weight:400;
+    color: rgb(251, 37, 119, 0.7);
+}
+
+.day:hover {
+    cursor: pointer;
+    color:rgb(251, 37, 119, 0.5);
+}
+
+.day:active {
+    font-weight: 600;
+    color: rgb(251, 37, 119);
+}
+
+.selected-day {
+    font-weight: 600;
+    color: rgb(251, 37, 119);
+}
+
+.selected-day:hover {
+    font-weight: 600;
+    color: rgb(251, 37, 119);
+}
+
+.AMPM-alarm {
+    position: absolute;
+    top: 60px;
+    left: 135px;
+    background: none;
+    color:rgb(251, 37, 119);
+    border: none;
+    font-size: 1.5rem;
+}
+
+.AMPM-options {
+    font-size: 1.5rem;
+}
