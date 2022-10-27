@@ -52,9 +52,9 @@
     display: flex;
     position: absolute;
     top: 36px;
-    left: 200px;
+    left: 195px;
     justify-content: space-between;
-    width: 175px;
+    width: 200px;
 }
 
 .day {

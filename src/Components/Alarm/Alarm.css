@@ -1,7 +1,11 @@
-#hours {
-    width: 30px;
-    background: transparent;
-    color: rgb(251, 37, 119);
-    border: none;
-
+.list-of-alarms {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 120px;
+    left: 56px;
+    border: 2px solid rgb(251, 37, 119);
+    width: 400px;
+    height: 300px;
+    overflow-Y: scroll;
 }

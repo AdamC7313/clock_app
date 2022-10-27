@@ -1,0 +1,13 @@
+.new-alarm-container {
+    border-bottom: 2px solid;
+    margin: 0px 0px;
+    font-size: 1.75rem;
+}
+
+.new-alarm-AMPM {
+    margin-left: 2px;
+}
+
+.new-alarm-selected-days {
+    margin-left: 30px;
+}

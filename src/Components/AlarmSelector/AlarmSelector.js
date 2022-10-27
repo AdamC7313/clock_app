@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import IndAlarm from '../IndAlarm/IndAlarm';
 
 export default function AlarmSelector(props) {
-    let [alarmTime, setAlarmTime] = useState(770000)
+    let [alarmTime, setAlarmTime] = useState(720000)
 
     let hours = Math.floor(alarmTime / 60000)
     let minutes = (alarmTime / 1000) % 60
@@ -49,10 +49,37 @@ export default function AlarmSelector(props) {
         let classlist = document.getElementById(day).classList
         if(classlistArr.includes('selected-day')) {
             classlist.remove('selected-day')
+            setSelectedDays(prevDays => prevDays.filter(eachDay => eachDay.day !== day))
         } else {
+            let value;
             classlist.add('selected-day')
+            switch(day) {
+                case 'M':
+                    value = 0
+                    break;
+                case 'T':
+                    value = 1
+                    break;
+                case 'W':
+                    value = 2
+                    break;
+                case 'TH':
+                    value = 3
+                    break;
+                case 'F':
+                    value = 4
+                    break;
+                case 'SA':
+                    value = 5
+                    break;
+                case 'SU':
+                    value = 6
+                    break;
+            }
+            setSelectedDays(prevDays => [...prevDays, {day: day, value: value}])
+            console.log(selectedDays)
         }
-        setSelectedDays(prevDays => [...prevDays, day])
+        
     }
     
     const [AMPM, setAMPM] = useState('AM')
@@ -62,12 +89,25 @@ export default function AlarmSelector(props) {
 
 
 
-
     function addAlarm(hours, minutes, AMPM, selectedDays) {
+        if(selectedDays === ['']) {
+            alert('Please select a day.')
+        } else {
         props.setListOfAlarms(prevAlarms => [...prevAlarms, 
-        <IndAlarm hours={hours} minutes={minutes} AMPM={AMPM} selectedDays={selectedDays} />
+        <IndAlarm hours={hours} minutes={minutes} AMPM={AMPM} selectedDays={selectedDays} key={props.listOfAlarms.length}/>
         ])
-        console.log(props.listOfAlarms)
+        setAlarmTime(720000)
+        document.getElementsByClassName('AMPM-alarm')[0].value = 'AM'
+        let day = document.getElementsByClassName('day')
+        day[0].classList.remove('selected-day')
+        day[1].classList.remove('selected-day')
+        day[2].classList.remove('selected-day')
+        day[3].classList.remove('selected-day')
+        day[4].classList.remove('selected-day')
+        day[5].classList.remove('selected-day')
+        day[6].classList.remove('selected-day')
+        setSelectedDays([])
+    }
     }
 
     return(
@@ -84,13 +124,13 @@ export default function AlarmSelector(props) {
             <GoTriangleDown className='increment minutes-down-alarm' onClick={() => handleMinuteDownClick()}/>
             <GoTriangleDown className='increment seconds-down-alarm' onClick={() => handleSecondDownClick()}/> 
             <div className='days-container'>
-                <h2 id='mon' className='day' onClick={() => handleDayClick('mon')}>M</h2>
-                <h2 id='tues' className='day' onClick={() => handleDayClick('tues')}>T</h2>
-                <h2 id='wed' className='day' onClick={() => handleDayClick('wed')}>W</h2>
-                <h2 id='thurs' className='day' onClick={() => handleDayClick('thurs')}>T</h2>
-                <h2 id='fri' className='day' onClick={() => handleDayClick('fri')}>F</h2>
-                <h2 id='sat' className='day' onClick={() => handleDayClick('sat')}>S</h2>
-                <h2 id='sun' className='day' onClick={() => handleDayClick('sun')}>S</h2>
+                <h2 id='M' className='day' onClick={() => handleDayClick('M')}>M</h2>
+                <h2 id='T' className='day' onClick={() => handleDayClick('T')}>T</h2>
+                <h2 id='W' className='day' onClick={() => handleDayClick('W')}>W</h2>
+                <h2 id='TH' className='day' onClick={() => handleDayClick('TH')}>TH</h2>
+                <h2 id='F' className='day' onClick={() => handleDayClick('F')}>F</h2>
+                <h2 id='SA' className='day' onClick={() => handleDayClick('SA')}>SA</h2>
+                <h2 id='SU' className='day' onClick={() => handleDayClick('SU')}>SU</h2>
             </div>
             <button className='add-alarm' onClick={() => addAlarm(hours, minutes, AMPM, selectedDays)}>Add Alarm</button>
         </div>

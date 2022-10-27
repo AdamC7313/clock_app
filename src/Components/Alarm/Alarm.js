@@ -4,7 +4,7 @@ import IndAlarm from '../IndAlarm/IndAlarm';
 import AlarmSelector from '../AlarmSelector/AlarmSelector';
 
 export default function Alarm() {
-    let [listOfAlarms, setListOfAlarms] = useState([<IndAlarm key='0' />])
+    let [listOfAlarms, setListOfAlarms] = useState([])
     let [hours, setHours] = useState(0)
     let [minutes, setMinutes] = useState(0)
 
@@ -18,7 +18,7 @@ export default function Alarm() {
             listOfAlarms={listOfAlarms}
             setListOfAlarms={setListOfAlarms} 
             /> 
-           {listOfAlarms}
+           <span className='list-of-alarms'>{listOfAlarms}</span>
         <div>
         </div>
         </div>
