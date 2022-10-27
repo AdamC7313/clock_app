@@ -4,7 +4,7 @@ import Alarm from './Components/Alarm/Alarm';
 import Timer from './Components/Timer/Timer';
 import Clock from './Components/Clock/Clock';
 import Nav from './Components/Nav/Nav';
-import { Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {

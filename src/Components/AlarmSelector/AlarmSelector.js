@@ -1,6 +1,6 @@
 import './AlarmSelector.css';
 import { GoTriangleUp, GoTriangleDown } from 'react-icons/go';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import IndAlarm from '../IndAlarm/IndAlarm';
 
 export default function AlarmSelector(props) {
@@ -75,6 +75,8 @@ export default function AlarmSelector(props) {
                 case 'SU':
                     value = 6
                     break;
+                default:
+                    value = 0
             }
             setSelectedDays(prevDays => [...prevDays, {day: day, value: value}])
             console.log(selectedDays)

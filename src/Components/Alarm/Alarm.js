@@ -1,6 +1,5 @@
 import './Alarm.css';
 import { useState } from 'react';
-import IndAlarm from '../IndAlarm/IndAlarm';
 import AlarmSelector from '../AlarmSelector/AlarmSelector';
 
 export default function Alarm() {

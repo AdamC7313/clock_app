@@ -5,9 +5,9 @@ export default function Clock() {
     let [hour  , setHour  ] = useState(0);
     const [minute, setMinute] = useState(0);
     const [second, setSecond] = useState(0);
-    const [day   , setDay   ] = useState(0);
+    /*const [day   , setDay   ] = useState(0);
     const [pm    , setPm    ] = useState(false);
-    const [timezone, setTimezone] = useState('ET')
+    const [timezone, setTimezone] = useState('ET')*/
 
     useEffect(() => {
 
